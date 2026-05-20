@@ -3,12 +3,12 @@
 #include <string>
 #include <stdexcept>
 
-Config ArgumentParser::parse(int argc, char** argv){
+Config ArgumentParser::parse(int argc, const char** argv){
     Config config;
 
     if(argc < 3){
         
-        throw std::runtime_error("Error: to few arguments");
+        throw std::runtime_error("Error: too few arguments");
     }else{ 
         config.pattern = argv[1];
         config.filepath = argv[2];
