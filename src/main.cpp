@@ -3,25 +3,13 @@
 #include <filesystem>
 #include <cstdio>
 #include <fstream>
+#include "ArgumentParser.hpp"
 
-namespace fs =std::filesystem;
 using namespace std;
-int counter = 0;
 
-int main(int argc, char* argv[])
+int main(int argc, const char* argv[])
 {
-	ifstream file(argv[1]);
-	string keyword = argv[2];
-	string word;
-
-	if (file) {
-		while (file >> word) {
-			if (word == keyword) {
-				counter++;
-			}
-		}
-	}
-
-	cout << "Words counted" << counter << "\n";
-
+	ArgumentParser parser;
+	Config config = parser.parse(argc, argv);
+	
 }

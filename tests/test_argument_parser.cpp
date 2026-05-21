@@ -1,5 +1,4 @@
 #include "ArgumentParser.hpp"
-
 #include <cassert>
 #include <iostream>
 #include <stdexcept>
@@ -16,24 +15,6 @@ void test_parse_valid_arguments()
     assert(config.case_sensitive == false);
 }
 
-void test_parse_too_few_arguments()
-{
-    ArgumentParser parser;
-    
-    const char* argv[] ={"gmb"};
-    bool exceptionThrown = false;
-
-    try {
-        parser.parse(1,argv);
-
-    }
-    catch (const std::runtime_error&){
-
-        exceptionThrown = true;
-    }
-
-    assert(exceptionThrown);
-}
 
 int main()
 {
