@@ -43,6 +43,19 @@ Formats and prints results in a `grep-like` output style.
 - Stateless processing (data flows through the pipeline without global state)
 - Dependency Injection (components receive data rather than creating dependencies internally)
 
+## Usage
+
+To build the project
+
+```bash
+make
+```
+To build and run the project:
+
+```bash
+make run
+```
+
 ## Contributors
 Julia Rochatka @jrochatka (Dev)
 Dominik Cedro @dominikcedro (PO)
