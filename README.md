@@ -1,8 +1,10 @@
 # GrepMadeBetter
 GrepMadeBetter is a simple tool for phrase searching among files.
 
-## Please note
-Most of the improvements are avaliable at dev branch.
+> [!NOTE]
+> The `master` branch contains the stable version of the project.
+> Current development is taking place on the `dev` branch.
+> Please switch to `dev` to access the latest features and updates.
 
 ## Description
 GMB is a grep like CLI (command line interface) program, that searches for user-defined phrases in files. It supports text, markdown and python/c++ files as well as special formating of output. Additional information: 
