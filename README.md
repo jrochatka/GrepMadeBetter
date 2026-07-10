@@ -56,6 +56,16 @@ To build and run the project:
 make run
 ```
 
+If no arguments are provided, the program displays the following help message:
+
+```text
+$ gmb
+This is a GMB tool, short for GrepMAdeBetter.
+To search for phrase (or pattern) in a file simply write:
+
+gmb <pattern> <filename>
+```
+
 ## Contributors
 Julia Rochatka @jrochatka (Dev)
 Dominik Cedro @dominikcedro (PO)
